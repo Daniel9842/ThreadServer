@@ -33,10 +33,10 @@ public class DatagramTimeServer {
 	 */
 	public void startServer(){
 		byte[] buf = new byte[256];
-		Thread thread = new Thread();
+		Thread myThreadTime = new Thread();
 		while (true) {
 			try {
-				thread.sleep(5000);
+				myThreadTime.sleep(5000);
 				DatagramPacket packet = new DatagramPacket(buf, buf.length);
 				socket.receive(packet);
 				String dString = new Date().toString();
