@@ -2,6 +2,9 @@
 ### Daniel Santiago Ducuara Ardila
 ### 16/06/2021
 
+## Resumen
+Este taller consta de dos ejercicios, el primer ejercicio es realizar un servidor de datagramas con el objetivo de que un servidor envíe como respuesta a un cliente
+la fecha actual. El segundo ejercicio consiste en realizar un servidor que lea páginas html concurremente mediante hilos.
 ## Diagrama de clases
 
 ### Paquete Datagram
