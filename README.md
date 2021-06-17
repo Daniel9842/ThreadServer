@@ -20,14 +20,17 @@ posteriormente ejecutarlas.Para la ejecución es necesario iniciar la clase Thre
 del archivo se encuentran 3 archivos en la carpeta TestHttpServer para probar con dichos archivos.
 
 ## Reporte de pruebas
-![Tests Test Report](Design/test.PNG "Test Report")<br>
-![Tests Test Datagram](Design/test2.PNG "Test Datagram")<br>
 Se realiza el reporte de pruebas con todas las pruebas satisfactorias.
 - La primera prueba es comparar la hora que retorna el servidor con la hora actual.
+  ![Tests Test Report](Design/test.PNG "Test Report")<br>
 - Para las pruebas de HttpServer se encuentra la carpeta TestHttpServer con 3 archivos html, es necesario iniciar la clase ThreadPoolExecutorServer y 
   en el navegador colocar 127.0.0.1:3500/Test1HttpServer.html dependiendo del archivo.
+  ![Tests Test Report](Design/test3.PNG "Test Report")<br>
+  ![Tests Test Report](Design/test4.PNG "Test Report")<br>
+  ![Tests Test Report](Design/test5.PNG "Test Report")<br>
+  ![Tests Test Report](Design/test6.PNG "Test Report")<br>
 - Para la prueba de datagrama se debe iniciar el DatagramTimeServer y posteriormente DatagramTimeClient, se comprueba que el servidor responda cada 5 segundos la fecha,
   posteriormente se apaga y se enciende el servidor y el resultado debe ser el mismo,que cada 5 segundos reciba respuestas del servidor.
-
+  ![Tests Test Datagram](Design/test2.PNG "Test Datagram")<br>
 ### Productividad
 La productividad de este proyecto fue de 250LOC/5 horas .
