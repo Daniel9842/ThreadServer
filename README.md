@@ -5,14 +5,14 @@
 ## Diagrama de clases
 
 ### Paquete Datagram
-![Design Datagram](Design/Datagram.PNG "Datagram")<br>
+![Design Datagram](Design/packageDatagram.PNG "Datagram")<br>
 El paquete Datagram consta de dos clases principales, DatagramTimeServer que es un servidor que responde la hora actual del servidor, consta de métodos para crear
 la conexión. iniciar el servidor y retornar la hora actual, se incluyó un hilo para que retorne la hora cada 5 segundos y que se mantenga encendido el servidor. 
 DatagramTimeClient es el cliente que recibe las respuestas del servidor cada 5 segundos. Para la ejecución es necesario iniciar primero el servidor y posteriormente
 el cliente, automáticamente el cliente recibirá la fecha actual y irá recibiendo respuestas cada 5 segundos. 
 
 ### Paquete Http
-![Design Http](Design/Http.PNG "Http")<br>
+![Design Http](Design/packageHttp.PNG "Http")<br>
 El paquete Http consta de dos clases,HttpServerThread se encarga de crear un servidor que soporte múltiples solicitudes, la clase cuenta con métodos como startServer 
 en el cual se inicia la conexión al servidor, en el método processRequest se crea la solicitud del servidor y en el método createTextResponse retorna la información 
 del archivo html. La clase ThreadPoolExecutorServer se utilizará un solo hilo que va a ir creando el servidor y las solicitudes las irá almacenando en cola para 
