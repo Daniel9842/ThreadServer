@@ -24,10 +24,13 @@ Se realiza el reporte de pruebas con todas las pruebas satisfactorias.
 - La primera prueba es comparar la hora que retorna el servidor con la hora actual.
   ![Tests Test Report](Design/test.PNG "Test Report")<br>
 - Para las pruebas de HttpServer se encuentra la carpeta TestHttpServer con 3 archivos html, es necesario iniciar la clase ThreadPoolExecutorServer y 
-  en el navegador colocar 127.0.0.1:3500/Test1HttpServer.html dependiendo del archivo.
+  en el navegador colocar 127.0.0.1:3500/Test1HttpServer.html dependiendo del archivo.<br>
   ![Tests Test Report](Design/test3.PNG "Test Report")<br>
+  Se comprueba con la primera página<br>
   ![Tests Test Report](Design/test4.PNG "Test Report")<br>
+  Se comprueba con la segunda página<br>
   ![Tests Test Report](Design/test5.PNG "Test Report")<br>
+  Se comprueba con la tercera página<br>
   ![Tests Test Report](Design/test6.PNG "Test Report")<br>
 - Para la prueba de datagrama se debe iniciar el DatagramTimeServer y posteriormente DatagramTimeClient, se comprueba que el servidor responda cada 5 segundos la fecha,
   posteriormente se apaga y se enciende el servidor y el resultado debe ser el mismo,que cada 5 segundos reciba respuestas del servidor.
