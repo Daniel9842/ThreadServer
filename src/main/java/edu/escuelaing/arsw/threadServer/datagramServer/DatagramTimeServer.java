@@ -39,8 +39,7 @@ public class DatagramTimeServer {
 				myThreadTime.sleep(5000);
 				DatagramPacket packet = new DatagramPacket(buf, buf.length);
 				socket.receive(packet);
-				String dString = new Date().toString();
-				buf = dString.getBytes();
+				buf = getDate().getBytes();
 				InetAddress address = packet.getAddress();
 				int port = packet.getPort();
 				packet = new DatagramPacket(buf, buf.length, address, port);
@@ -54,6 +53,14 @@ public class DatagramTimeServer {
 		}
 	}
 	/**
+	 * this method returns current date and time
+	 * @return the Date.
+	 */
+	public String getDate() {
+		return new Date().toString();
+	}
+	
+	/**
 	 * this method makes a call to create and start the server.
 	 * @param args empty parameter of main method
 	 */
@@ -61,5 +68,7 @@ public class DatagramTimeServer {
 		DatagramTimeServer ds = new DatagramTimeServer();
 		ds.startServer();
 	}
+	
+	
 }
 
