@@ -21,6 +21,7 @@ del archivo se encuentran 3 archivos en la carpeta TestHttpServer para probar co
 
 ## Reporte de pruebas
 ![Tests Test Report](Design/test.PNG "Test Report")<br>
+![Tests Test Datagram](Design/test2.PNG "Test Datagram")<br>
 Se realiza el reporte de pruebas con todas las pruebas satisfactorias.
 - La primera prueba es comparar la hora que retorna el servidor con la hora actual.
 - Para las pruebas de HttpServer se encuentra la carpeta TestHttpServer con 3 archivos html, es necesario iniciar la clase ThreadPoolExecutorServer y 
