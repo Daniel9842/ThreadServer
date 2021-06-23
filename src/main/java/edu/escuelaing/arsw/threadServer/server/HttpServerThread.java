@@ -122,7 +122,7 @@ public class HttpServerThread implements Runnable {
 		if (System.getenv("PORT") != null) {
 			return Integer.parseInt(System.getenv("PORT"));
 		}
-		return 36000;
+		return 35000;
 	}
 	
 }
