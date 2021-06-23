@@ -6,6 +6,16 @@
 ## Resumen
 Este taller consta de dos ejercicios, el primer ejercicio es realizar un servidor de datagramas con el objetivo de que un servidor envíe como respuesta a un cliente
 la fecha actual. El segundo ejercicio consiste en realizar un servidor que lea páginas html concurremente mediante hilos.
+
+## Heroku
+
+Acá se puede observar el despliegue del primer archivo html que está en la carpeta de archivos de prueba.
+![Heroku test1](images/heroku1.PNG "Heroku test1")<br>
+Se despliega el segundo archivo de pruebas.
+![Heroku test2](images/heroku2.PNG "Heroku test2")<br>
+Se despliega el segundo archivo de pruebas.
+![Heroku test3](images/heroku3.PNG "Heroku test3")<br>
+
 ## Diagrama de clases
 
 ### Paquete Datagram
@@ -20,24 +30,24 @@ el cliente, automáticamente el cliente recibirá la fecha actual y irá recibie
 El paquete Http consta de dos clases,HttpServerThread se encarga de crear un servidor que soporte múltiples solicitudes, la clase cuenta con métodos como startServer 
 en el cual se inicia la conexión al servidor, en el método processRequest se crea la solicitud del servidor y en el método createTextResponse retorna la información 
 del archivo html. La clase ThreadPoolExecutorServer se utilizará un solo hilo que va a ir creando el servidor y las solicitudes las irá almacenando en cola para 
-posteriormente ejecutarlas.Para la ejecución es necesario iniciar la clase ThreadPoolExecutorServer y en el navegador colocar 127.0.0.1:35000/archivo, para la parte 
+posteriormente ejecutarlas.Para la ejecución local es necesario iniciar la clase ThreadPoolExecutorServer y en el navegador colocar 127.0.0.1:35000/archivo, para la parte 
 del archivo se encuentran 3 archivos en la carpeta TestHttpServer para probar con dichos archivos.
 
 ## Reporte de pruebas
 Se realiza el reporte de pruebas con todas las pruebas satisfactorias.
 - La primera prueba es comparar la hora que retorna el servidor con la hora actual.
-  ![Tests Test Report](Design/test.PNG "Test Report")<br>
+  ![Tests Test Report](images/test.PNG "Test Report")<br>
 - Para las pruebas de HttpServer se encuentra la carpeta TestHttpServer con 3 archivos html, es necesario iniciar la clase ThreadPoolExecutorServer y 
   en el navegador colocar 127.0.0.1:3500/Test1HttpServer.html dependiendo del archivo.<br>
-  ![Tests Test Report](Design/test3.PNG "Test Report")<br>
+  ![Tests Test Report](images/test3.PNG "Test Report")<br>
   Se comprueba con la primera página<br>
-  ![Tests Test Report](Design/test4.PNG "Test Report")<br>
+  ![Tests Test Report](images/test4.PNG "Test Report")<br>
   Se comprueba con la segunda página<br>
-  ![Tests Test Report](Design/test5.PNG "Test Report")<br>
+  ![Tests Test Report](images/test5.PNG "Test Report")<br>
   Se comprueba con la tercera página<br>
-  ![Tests Test Report](Design/test6.PNG "Test Report")<br>
+  ![Tests Test Report](images/test6.PNG "Test Report")<br>
 - Para la prueba de datagrama se debe iniciar el DatagramTimeServer y posteriormente DatagramTimeClient, se comprueba que el servidor responda cada 5 segundos la fecha,
   posteriormente se apaga y se enciende el servidor y el resultado debe ser el mismo,que cada 5 segundos reciba respuestas del servidor.
-  ![Tests Test Datagram](Design/test2.PNG "Test Datagram")<br>
+  ![Tests Test Datagram](images/test2.PNG "Test Datagram")<br>
 ### Productividad
 La productividad de este proyecto fue de 250LOC/5 horas .
