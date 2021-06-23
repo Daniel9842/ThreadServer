@@ -1,5 +1,5 @@
 # Threads Server
-[![Heroku](https://www.herokucdn.com/deploy/button.png)](https://threadserver.herokuapp.com/Test1HttpServer.html)
+[![Heroku](https://www.herokucdn.com/deploy/button.png)](https://threadserver.herokuapp.com/Test3HttpServer.html)
 ### Daniel Santiago Ducuara Ardila
 ### 16/06/2021
 
@@ -13,7 +13,7 @@ Acá se puede observar el despliegue del primer archivo html que está en la car
 ![Heroku test1](images/heroku1.PNG "Heroku test1")<br>
 Se despliega el segundo archivo de pruebas.
 ![Heroku test2](images/heroku2.PNG "Heroku test2")<br>
-Se despliega el segundo archivo de pruebas.
+Se despliega el tercer archivo de pruebas.<br>
 ![Heroku test3](images/heroku3.PNG "Heroku test3")<br>
 
 ## Diagrama de clases
