@@ -87,10 +87,11 @@ public class HttpServerThread implements Runnable {
 	public void run() {
 		// TODO Auto-generated method stub
 		ServerSocket serverSocket = null;
+		int port = getPort();
 		try {
-			serverSocket = new ServerSocket(35000);
+			serverSocket = new ServerSocket(port);
 		} catch (IOException e) {
-			System.err.println("Could not listen on port: 35000.");
+			System.err.println("Could not listen on port.");
 			System.exit(1);
 		}
 		Socket clientSocket = null;
@@ -116,6 +117,12 @@ public class HttpServerThread implements Runnable {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	static int getPort() {
+		if (System.getenv("PORT") != null) {
+			return Integer.parseInt(System.getenv("PORT"));
+		}
+		return 36000;
 	}
 	
 }
