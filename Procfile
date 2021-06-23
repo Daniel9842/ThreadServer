@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes:target/dependency/* edu.escuelaing.arsw.threadServer.server.ThreadPoolExecutorServer.java
+web: java $JAVA_OPTS -cp target/classes:target/dependency/* edu.escuelaing.arsw.threadServer.server.ThreadPoolExecutorServer
